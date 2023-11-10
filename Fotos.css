@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* { 
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style: none;
+}
+body {
+    background-color: black;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#fotos-container{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    width: 100%;
+    
+}
+
+.bat {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+}
+
+.aa {
+    background-image: url('https://sobresagas.com.br/wp-content/uploads/2022/02/robert-pattinson.jpeg');
+    }
+
+.aa:hover {
+    transform: scale(1.03);
+}
+
+.bb  {
+    background-image: url('https://foto.kontan.co.id/may295pvGAgIpNYyZHyheMB23jA=/smart/2022/02/02/938366319p.jpg');
+    }
+
+.bb:hover {     
+    transform: scale(1.03);
+    }
+
+.cc {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/35ce9f138691271.625c1933b390b.jpg');
+    }
+
+.cc:hover {     
+    transform: scale(1.03);
+     }
+    
+.dd {
+    background-image: url('https://www.layar.id/wp-content/uploads/2022/02/Riddler-Batman-691x1024.jpeg');
+    }
+
+.dd:hover {     
+     transform: scale(1.03);
+     }
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+span {
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+.footer-navigation {
+    display: none;
+    }
+    
+.footer-list {
+    width: 170%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #fotos-container{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+        margin-left: 17px;
+    }
+}

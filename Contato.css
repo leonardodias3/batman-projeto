@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* { 
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+nav li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+nav li:hover {
+    color: red;
+}
+
+#hh {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#paidofundo {
+    width: 100%;
+    height: 750px;
+    background-image: url('./1870510.jpg');
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+}
+
+#redes {
+    position: absolute;
+    width: 330px;
+    height: 150px;
+    color: aliceblue;
+    padding: 150px;
+}
+
+p {
+    background-color: rgb(75, 74, 74);
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+  
+}
+
+#sociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#sociais a {
+    margin-left: 20px;
+}
+
+.o {
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+.o:hover {
+    transform: scale(1.2);
+}
+
+.oo {
+    color:black;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+.oo:hover {
+    transform: scale(1.2);
+}
+
+.ooo {
+    color: rgb(111, 72, 148);
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+}
+
+.ooo:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+span {
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+.footer-navigation {
+    display: none;
+    }
+    
+.footer-list {
+    width: 170%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+@media(max-width: 768px) {
+    .footer-navigation{
+    display: block;    
+    }
+
+    nav {
+    display: none;
+    }
+
+    #paidofundo {
+        background-position: 80%;
+    }
+
+    #redes {
+        margin-left: -25%;
+    }
+#sociais {
+    height: 500px;
+    display: block;
+    flex-direction: column;
+}
+
+#sociais a {
+    width: 75px;
+    height: 75px;
+    display: block;
+    padding-top: 35px;
+    margin-left: 127px;
+}
+    }

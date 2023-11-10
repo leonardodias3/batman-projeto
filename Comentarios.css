@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* { 
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: red;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#comentario-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    }
+
+.casalula {
+  width: 200px;
+  height: 200px;
+}
+
+.lula {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://robsonpiresxerife.com/wp-content/uploads/2014/08/20140825061528_cv_lulabebendo_gde.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 1s;
+}
+
+.lula:hover {
+    transform: scale(1.03);
+}
+
+.casachaves {
+    width: 200px;
+    height: 200px;
+
+}
+
+.chaves {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://lcmagalhaes.com.br/wp-content/uploads/2020/09/chaves.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.chaves:hover {
+    transform: scale(1.03);
+}
+
+.casaneymar {
+    width: 200px;
+    height: 200px;
+}
+
+.neymar {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://i0.statig.com.br/bancodeimagens/2a/f3/mg/2af3mgb8rm1bybhexew447rxi.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+.neymar:hover {
+    transform: scale(1.03);
+}
+
+p {
+    width: 200px;
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 16px;
+}
+
+.coment {
+    width: 100%;
+    color: aliceblue;
+    font-size: 20px;
+    padding-left: 40%;
+}
+
+.mensagem {
+    width: 100px;
+    height: 50px;
+}
+
+footer {
+    height: 300px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+span {
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+    
+.footer-navigation {
+    display: none;
+    }
+    
+.footer-list {
+    width: 170%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+@media(max-width: 768px) {
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #comentario-container {
+        display: block;
+        margin-left: 100px;
+    }
+
+    .casachaves {
+        margin-top: 350px;
+
+    }
+
+    .casaneymar {
+        margin-top: 300px;
+    }
+
+    .coment {
+        margin-top: 950px;
+        margin-left: -20%;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+
+}
